@@ -69,3 +69,32 @@ Customize VS Code with extensions from the [Visual Studio Marketplace](https://m
 - Tools for your favorite frameworks
 
 </details>
+
+## Challenge
+
+The challenge consists in creating an application with the following requirements:
+
+- REQ01: The application is a "meteo" des neiges application that displays weather information for skiing resorts in the Geneva region (e.g. Chamonix, Verbier, Zermatt, etc.)
+- REQ02: The application is a static web application
+- REQ03: The application is automatically deployed in GitHub Pages
+- REQ04: Deployment to the GitHub Pages associated with the repository must happen automatically upon push in the `main` branch
+- REQ05: The application must have a responsive design that works on both desktop and mobile devices, use visual indicators (icons or images) for weather conditions, and organize resort information in a clear, scannable layout (e.g., cards or a dashboard grid).
+- REQ06: The application must be built securely following best practices for web application development
+
+There are several ways to interact with GitHub Copilot to build the application.
+
+### Use Copilot Coding Agent (recommended)
+
+### Use Copilot in Visual Studio Code
+
+### Use Copilot CLI
+
+## Challenge submission
+
+To submit your challenge got to https://github.com/dbroeglin/ghcp-car-challenge-judge/issues and submit a new issue. Share the sfollowing information:
+
+- A name (or nickname) to identity the submitter
+- The URL to your GitHub repository containing the code for your application
+- The URL to the GitHub Pages where your application is deployed.
+
+Make sure that both URLs are publicly accessible.
