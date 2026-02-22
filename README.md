@@ -10,8 +10,7 @@
 ### Getting Started Checklist
 
 1. ✅ Use your existing GitHub account with an active GitHub Subscription or use [Copilot Free plan](https://github.com/github-copilot/signup) (no credit card required!)
-2. ✅To activate _Premium Models_ for a 30 days trial go to https://github.com/github-copilot/pro
-3. ✅That's it! The challenge can be achieved on github.com. _Alternatively_ you can also:
+2. ✅That's it! The challenge can be achieved on github.com. _Alternatively_ you can also:
    1. ☑️ Download and install VS Code for your platform
    2. ☑️ Install additional components (Git, Node.js, language runtimes)
    3. ☑️ Enable AI features and sign in to GitHub Copilot
@@ -80,6 +79,7 @@ The challenge consists in creating an application with the following requirement
 - REQ04: Deployment to the GitHub Pages associated with the repository must happen automatically upon push in the `main` branch
 - REQ05: The application must have a responsive design that works on both desktop and mobile devices, use visual indicators (icons or images) for weather conditions, and organize resort information in a clear, scannable layout (e.g., cards or a dashboard grid).
 - REQ06: The application must be built securely following best practices for web application development
+- REQ07: The application must use publicly available APIs to retrieve weather data
 
 There are several ways to interact with GitHub Copilot to build the application.
 
