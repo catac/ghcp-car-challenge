@@ -6,24 +6,29 @@
     <title>Single Page App</title>
     <script type="text/javascript">
         // Single Page Apps for GitHub Pages
-        // MIT License
         // https://github.com/rafgraph/spa-github-pages
+        // This file is meant to be used when the basename is set to a subdirectory name
+        // e.g. /ghcp-car-challenge/
 
-        var segmentCount = 0;
+        var pathSegments = window.location.pathname.split('/');
+        var basePathSegment = ''; // will be set to 'ghcp-car-challenge' if it exists
 
-        (function () {
-            if (window.location.pathname.includes('/ghcp-car-challenge')) {
-                segmentCount = 1;
+        // Find the base path segment (the repo name)
+        for (var i = 0; i < pathSegments.length; i++) {
+            if (pathSegments[i] && pathSegments[i] !== 'index.html') {
+                basePathSegment = pathSegments[i];
+                break;
             }
-        })();
+        }
 
-        window.location.replace(
-            window.location.pathname.split('/').slice(0, 1 + segmentCount).join('/') +
-            '/?p=/' +
-            window.location.pathname.slice(1).split('/').slice(segmentCount).join('/').split('?')[0] +
-            (window.location.search ? '&q=' + window.location.search.slice(1) : '') +
-            window.location.hash
-        );
+        // Reconstruct URL with the base path
+        var newPath = '/' + basePathSegment + '/?p=' + window.location.pathname.slice(1).split('/').slice(1).join('/');
+        if (window.location.search) {
+            newPath += '&q=' + window.location.search.slice(1);
+        }
+        newPath += window.location.hash;
+
+        window.location.replace(newPath);
     </script>
 </head>
 
